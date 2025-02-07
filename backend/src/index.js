@@ -1,10 +1,10 @@
-import express from "express";
+import express from 'express';
 const app = express();
-import { StatusCodes } from "http-status-codes";
-import { PORT } from "./config/serverConfig.js";
+import { StatusCodes } from 'http-status-codes';
+import { PORT } from './config/serverConfig.js';
 
-app.get("/ping", (req, res) => {
-  return res.status(StatusCodes.OK).json({ message: "pong" });
+app.get('/ping', (req, res) => {
+  return res.status(StatusCodes.OK).json({ message: 'pong' });
 });
 
 app.listen(PORT, () => {
